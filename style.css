@@ -1,0 +1,189 @@
+html, body {
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Langar', cursive;
+    margin: 0;
+    text-align: center;
+    /* text-align: center; */
+}
+
+#main {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #FFFAF0;
+    filter: drop-shadow(8px 8px 15px gray);
+    border-radius: 10px;
+}
+
+#main-header {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-position: bottom;
+    background-size: cover;
+    color: black;
+    background-image: url("img/release-spring_summer-2019_resize-760x760.jpg");
+    min-height: 12em;
+}
+
+/* .black_and_white {
+    background-color: black;
+    color: white;
+} */
+
+#title {
+    margin: 0;
+}
+
+.container-header {
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+#img-section {
+    margin-top: -40px;
+    padding-bottom: 25px;
+}
+
+#img-caption {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 20px; */
+}
+
+#image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(8px 8px 15px gray);
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes spin {
+    from {
+        top: 40px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+/* do skończenia */
+
+#text-section {
+    background: rgb(192, 212, 160);
+    background: linear-gradient(180deg, rgba(192, 212, 160, 1) 4%, rgba(193, 218, 174, 1) 65%, rgba(205, 220, 185, 1) 91%);
+    position: relative;
+}
+
+#text-section::before {
+    background-color: #FFFAF0;
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: 0;
+    border-radius: 100vw/10vw;
+}
+
+.container-text {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2vw;
+}
+
+.content {
+    background-color: #FFFAF0;
+    max-width: 500px;
+    padding: 3rem;
+    border-radius: 5px;
+    filter: drop-shadow(8px 8px 15px gray);
+    line-height: 2em;
+    /* stąd kolory: */
+    /* https://www.designspiration.com/save/245854220911/ */
+    /* https://cssgradient.io/ */
+}
+
+footer {
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    min-height: 10em;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+
+#tribute-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    display: block;
+    transition: all .5s ease;
+    padding: 1em 1em;
+    border: solid 2px rgb(192, 212, 160);
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+#tribute-link:hover {
+    box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 755px) {
+    /* wczesniej zmiana albo margines w .content */
+    html, body {
+        background-color: brown;
+        font-size: 12px;
+    }
+    #image {
+        max-width: 400px;
+    }
+}
+
+/* pobaw się marginesem przy .content ? Czy umiescic w media czy oryginalnie */
+
+/*  nie ładnie wyglada jak nie ma w media ;/ */
+
+/* zgituj projekt!!!!!!! */
