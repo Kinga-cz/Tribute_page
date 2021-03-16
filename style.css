@@ -4,7 +4,6 @@ html, body {
     font-family: 'Langar', cursive;
     margin: 0;
     text-align: center;
-    /* text-align: center; */
 }
 
 #main {
@@ -28,11 +27,6 @@ html, body {
     background-image: url("img/release-spring_summer-2019_resize-760x760.jpg");
     min-height: 12em;
 }
-
-/* .black_and_white {
-    background-color: black;
-    color: white;
-} */
 
 #title {
     margin: 0;
@@ -91,8 +85,6 @@ figure {
     }
 }
 
-/* do skończenia */
-
 #text-section {
     background: rgb(192, 212, 160);
     background: linear-gradient(180deg, rgba(192, 212, 160, 1) 4%, rgba(193, 218, 174, 1) 65%, rgba(205, 220, 185, 1) 91%);
@@ -131,9 +123,6 @@ figure {
     filter: drop-shadow(8px 8px 15px gray);
     line-height: 2em;
     margin: 0 1em 0 1em;
-    /* stąd kolory: */
-    /* https://www.designspiration.com/save/245854220911/ */
-    /* https://cssgradient.io/ */
 }
 
 footer {
@@ -176,20 +165,15 @@ footer {
 /* Media Queries */
 
 @media screen and (max-width: 755px) {
-    /* wczesniej zmiana albo margines w .content */
     html, body {
         font-size: 12px;
     }
-    /* #image {
-        max-width: 400px; załatwia to za nas ustawienie figure{szerokosc w procentach}
-    } */
     figure {
         width: 70%;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    /* wczesniej zmiana albo margines w .content */
     html, body {
         font-size: 18px;
     }
@@ -197,9 +181,3 @@ footer {
         max-width: 600px;
     }
 }
-
-/* pobaw się marginesem przy .content ? Czy umiescic w media czy oryginalnie */
-
-/*  nie ładnie wyglada jak nie ma w media ;/ */
-
-/* zgituj projekt!!!!!!! */
